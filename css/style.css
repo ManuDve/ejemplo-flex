@@ -37,6 +37,7 @@ section {
     min-height: 20%; /* El mínimo de altura de cada caja, corresponde al 20% de la sección que lo contiene */
     padding: 2rem;
     border: 1px solid white;
+    border-radius: 5px; /* Dar bordes redondeados */
 }
 
 .mision h1, .vision h1 {
