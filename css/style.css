@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    min-height: 600px; /* Cada sección tiene mínimo 600px de altura, podría ser más */
+    padding: 3rem;
+}
+
+.inicio {
+    background-color: rgb(134, 218, 173);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.empresa {
+    /* Coloca la foto de fondo */
+    background: url(https://cdn.download.ams.birds.cornell.edu/api/v1/asset/202984001/1200);
+    background-position: center center; /* La centra horizontal y verticalmente */
+    background-repeat: no-repeat; /* Para que no se repita si es más pequeña */ 
+    background-size: cover; /* Para que cubra en totalidad el tamaño de la caja */
+
+    /* Aqui empieza flex */ 
+    display: flex;
+    flex-direction: column; /* Coloca los hijos como columnas */
+    justify-content: center; /* Los centra */
+    align-items: end; /* Los coloca al final, a la derecha */
+    gap: 4rem; /* Es la separación entre una caja y otra, 4rem = 4 * 16px */
+}
+
+.mision, .vision {
+    background-color: rgba(127, 255, 212, 0.075); /* El último parámetro es la opacidad */
+    color: white;
+    width: 300px;
+    min-height: 20%; /* El mínimo de altura de cada caja, corresponde al 20% de la sección que lo contiene */
+    padding: 2rem;
+    border: 1px solid white;
+}
+
+.mision h1, .vision h1 {
+    padding-bottom: 1rem;
+}
